@@ -9,8 +9,8 @@ public class Main {
 
         // prompting the user.
 
-        System.out.print("Please provide the following information:");
-        
+        System.out.print("Please provide the following information:\n");
+
         System.out.print("Full name: ");
         String FullName = scanner.nextLine();
         System.out.print("Billing Street: ");
@@ -31,16 +31,17 @@ public class Main {
         String Zip = scanner.nextLine();
 
         //appending the strings
-        info.append(FullName);
+        info.append(FullName).append("\n\nBilling Address: \n");
 
-        info.append(street);
-        info.append(city);
-        info.append(state);
-        info.append(zip);
-        info.append(Street);
-        info.append(City);
-        info.append(State);
-        info.append(Zip);
+        info.append(street).append("\n");
+        info.append(city).append(", ");
+        info.append(state).append(" ");
+        info.append(zip).append("\n\n");
+        info.append("Shipping Address: \n");
+        info.append(Street).append("\n");
+        info.append(City).append(", ");
+        info.append(State).append(" ");
+        info.append(Zip).append("\n");
 
         //retrieve the information
         String address = info.toString();
